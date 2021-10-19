@@ -25,7 +25,7 @@ if __name__ == "__main__":
         if (ser.in_waiting > 0):
             line = ser.readline()
             currdata = parse_data(line)
-            if data:
+            if currdata:
                 try:
                     collection.insert_one(currdata)
                 except:
