@@ -9,7 +9,7 @@ URL = f.read()
 client = MongoClient(URL)
 
 db = client["SolarRacingData"]
-collection = db['BoatData']
+collection = db['RPM']
 
 def parse_data(line):
     try:
